@@ -16,7 +16,7 @@ Animal::Animal(string name, int age, double height)
 
 void Animal::set_name(string name)
 {
-	this->name = name; //ÓÒ±ßnameÊÇ´«¹ıÀ´µÄ²ÎÊı,×ó±ßÊÇ³ÉÔ±
+	this->name = name; //å³è¾¹nameæ˜¯ä¼ è¿‡æ¥çš„å‚æ•°,å·¦è¾¹æ˜¯æˆå‘˜
 }
 string Animal::get_name()
 {
@@ -35,7 +35,7 @@ void Animal::set_height(double height)
 	//this->height = height;
 	if (height>0)
 	{
-		this->height = height;   //ÓÃÒÔĞ£ÑéÊı¾İÊÇÊÜ¿ØÖÆµÄ£¬ÏŞÖÆ²»ºÏÀíµÄ¸³Öµ
+		this->height = height;   //ç”¨ä»¥æ ¡éªŒæ•°æ®æ˜¯å—æ§åˆ¶çš„ï¼Œé™åˆ¶ä¸åˆç†çš„èµ‹å€¼
 	}
 }
 double Animal::get_height()
