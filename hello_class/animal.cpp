@@ -21,7 +21,7 @@ Animal::~Animal()    //Îö¹¹º¯Êý£¬¶ÔÓ¦×Åanimal¡£ÊÇÓÐdelete´¥·¢µÄ
 
 void Animal::set_name(string name)
 {
-	this->name = name; //å³è¾¹nameæ˜¯ä¼ è¿‡æ¥çš„å‚æ•°,å·¦è¾¹æ˜¯æˆå‘˜
+	this->name = name;   //½«²ÎÊýnameµÄÖµ¸³Öµ¸ø ±¾¶ÔÏóµÄ³ÉÔ±±äÁ¿name
 }
 string Animal::get_name()
 {
@@ -40,7 +40,7 @@ void Animal::set_height(double height)
 	//this->height = height;
 	if (height>0)
 	{
-		this->height = height;   //ç”¨ä»¥æ ¡éªŒæ•°æ®æ˜¯å—æŽ§åˆ¶çš„ï¼Œé™åˆ¶ä¸åˆç†çš„èµ‹å€¼
+		this->height = height;   
 	}
 }
 double Animal::get_height()
