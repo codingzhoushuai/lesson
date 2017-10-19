@@ -14,6 +14,11 @@ Animal::Animal(string name, int age, double height)
 	this->height = height;
 }
 
+Animal::~Animal()    //析构函数，对应着animal。是有delete触发的
+{
+	cout << name << " is destroyed" << endl;
+}
+
 void Animal::set_name(string name)
 {
 	this->name = name; //右边name是传过来的参数,左边是成员

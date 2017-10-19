@@ -11,6 +11,8 @@ private:
 public:
 	Animal();
 	Animal(string name, int age, double height);
+	~Animal();  //析构函数，只有一个而且不带函数
+
 	void set_name(string name);
 	string get_name();
 	void set_age(int age);

@@ -112,7 +112,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="main_animal.cpp" />
+    <ClCompile Include="animal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animal.h" />
