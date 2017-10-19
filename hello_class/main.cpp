@@ -1,9 +1,4 @@
-
-#include <iostream>
-#include <string>
-#include "animal.h"
-
-using namespace std;
+#include "animal.h"  //自己定义的头文件要用双引号标记
 
 int main()
 {

@@ -1,4 +1,4 @@
-#pragma once
+#pragma once      //保证头文件引入的只有一次儿不出错
 #include <iostream>
 #include <string>
 using namespace std;
