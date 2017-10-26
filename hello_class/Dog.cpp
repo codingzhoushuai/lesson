@@ -10,7 +10,14 @@ Dog::Dog(string name, int age, double height, string voice)
 	this->set_age(age);
 	this->set_height(height);
 	this->voice = voice;
+	cout << this->get_name() << " is constructed.(Dog)" << endl;    //被main.cpp中Dog d("mark", 15 , 2.21 ,"wangwang" );调用
 }
+
+Dog::~Dog()
+{
+	cout << this->get_name() << " is destroyed.(Dog)" << endl;
+}
+
 
 void Dog::set_vioce(string voice)
 {

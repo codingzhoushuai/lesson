@@ -12,11 +12,12 @@ Animal::Animal(string name, int age, double height)
 	this->name = name;
 	this->age = age;
 	this->height = height;
+	cout << name << " is constructed.(animal)"<< endl;         //调用私有的name
 }
 
 Animal::~Animal()    //析构函数，对应着animal。是有delete触发的
 {
-	cout << name << " is destroyed" << endl;
+	cout << name << " is destroyed.(animal)" << endl;
 }
 
 void Animal::set_name(string name)

@@ -8,9 +8,7 @@ private:
 public:
 	Dog();
 	Dog(string name, int age, double height, string voice);
-	~Dog()
-	{
-	}
+	~Dog();
 public:
 	void set_vioce(string voice);
 	string get_voice();
