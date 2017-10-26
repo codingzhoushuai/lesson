@@ -4,11 +4,9 @@
 Dog::Dog() 
 {
 }
-Dog::Dog(string name, int age, double height, string voice)
+Dog::Dog(string name, int age, double height, string voice):Animal(name,age,height)
+//真正的构造函数，先回构造父类的构造函数，再构造自己的。销毁的时候是先销毁自己的，再销毁父类的。
 {
-	this->set_name(name);
-	this->set_age(age);
-	this->set_height(height);
 	this->voice = voice;
 	cout << this->get_name() << " is constructed.(Dog)" << endl;    //被main.cpp中Dog d("mark", 15 , 2.21 ,"wangwang" );调用
 }

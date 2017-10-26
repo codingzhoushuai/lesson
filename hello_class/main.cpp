@@ -19,10 +19,10 @@ void f()
 
 int main() 
 {
-	Dog d("mark", 15 , 2.21 ,"wangwang" );
+	Dog* d = new Dog("mark", 15 , 2.21 ,"wangwang" );
     
-	d.show();
-
+	d->show();
+	delete d;
 	cin.get();
 	cin.get();
 }
