@@ -1,6 +1,7 @@
 #pragma once  //#pragma once是一个比较常用的C/C++杂注，只要在头文件的最开始加入这条杂注，就能够保证头文件只被编译一次。
 #include "animal.h"  //自己定义的头文件要用双引号标记
 #include "Dog.h"
+#include "bird.h"
 
 void f()
 {
@@ -19,10 +20,14 @@ void f()
 
 int main() 
 {
-	Dog* d = new Dog("mark", 15 , 2.21 ,"wangwang" );
-    
+	/*Dog* d = new Dog("mark", 15 , 2.21 ,"wangwang" );
 	d->show();
-	delete d;
+	delete d;*/
+
+	Bird* c = new Bird("click", 15 , 2.21 ,"white" );
+	c->show();
+	delete c;
+
 	cin.get();
 	cin.get();
 }

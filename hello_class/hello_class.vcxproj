@@ -111,12 +111,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bird.cpp" />
     <ClCompile Include="Dog.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="animal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="animal.h" />
+    <ClInclude Include="bird.h" />
     <ClInclude Include="Dog.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
