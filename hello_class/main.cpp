@@ -19,11 +19,8 @@ void f()
 
 int main() 
 {
-	Dog d;
-    d.set_name("mike");
-	d.set_age(15);
-	d.set_height(3.14);
-	d.set_vioce("¹·½Ð");
+	Dog d("mark", 15 , 2.21 ,"wangwang" );
+    
 	d.show();
 
 	cin.get();
