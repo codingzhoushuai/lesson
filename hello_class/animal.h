@@ -9,10 +9,10 @@ private:
 	int age;
 	double height;
 public:
-	Animal();
+	Animal();    //构造函数
 	Animal(string name, int age, double height);
-	~Animal();  //析构函数，只有一个而且不带函数
-
+	~Animal();   //析构函数，只有一个而且不带函数，不能重载
+	//提供了带参数的构造函数，系统会自动提供不带参数的构造函数
 	void set_name(string name);
 	string get_name();
 	void set_age(int age);

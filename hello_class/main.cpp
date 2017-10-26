@@ -1,5 +1,6 @@
 #pragma once  //#pragma once是一个比较常用的C/C++杂注，只要在头文件的最开始加入这条杂注，就能够保证头文件只被编译一次。
 #include "animal.h"  //自己定义的头文件要用双引号标记
+#include "Dog.h"
 
 void f()
 {
@@ -15,14 +16,27 @@ void f()
 	b.show();
 }
 
-int main()
+
+int main() 
+{
+	Dog d;
+    d.set_name("mike");
+	d.set_age(15);
+	d.set_height(3.14);
+	d.set_vioce("狗叫");
+	d.show();
+
+	cin.get();
+	cin.get();
+}
+/*int main()
 {
 	f();
 
 	Animal* c = new Animal("musk", 45, 1.85);   //new之后要主动回收内存，在main之中肯定会被回收。new是不带参数的构造函数
-												/*c->set_name("机器猫");
-												c->set_age(20);
-												c->set_height(112.3);*/
+												//c->set_name("机器猫");
+												//c->set_age(20);
+												//c->set_height(112.3);
 	c->show();
 	c->set_name("Alice");
 	c->set_age(46);
@@ -39,13 +53,8 @@ int main()
 
 	cin.get();
 	cin.get();
-}
-
-
-
-
-
-
+} 
+*/
 
 
 /*private:
