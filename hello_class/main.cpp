@@ -17,16 +17,17 @@ void f()
 	b.show();
 }
 
-
+ 
 int main() 
 {
-	/*Dog* d = new Dog("mark", 15 , 2.21 ,"wangwang" );
+	 
+	Animal* d = new Dog("mark", 15 , 2.21 ,"wangwang" );  //这里的Animal和Dog的运行效果是不一样的
 	d->show();
-	delete d;*/
+	delete d;
 
-	Bird* c = new Bird("click", 15 , 2.21 ,"white" );
+	/*Bird* c = new Bird("click", 15 , 2.21 ,"white" );
 	c->show();
-	delete c;
+	delete c;*/
 
 	cin.get();
 	cin.get();
