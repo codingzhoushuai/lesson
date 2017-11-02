@@ -38,7 +38,7 @@ int main()
 
 	int x = 80;
 	int* const px = &x;
-	px = 85;   //会报错 const修饰的数据类型是指常类型，常类型的变量或对象的值是不能被更新的。
+	//px = 85;   //会报错 const修饰的数据类型是指常类型，常类型的变量或对象的值是不能被更新的。
 	cout << * px << endl;
 	//const int* ip;    // ip is a pointer to const int
 	//int const* ip;    // ip is a pointer to int const

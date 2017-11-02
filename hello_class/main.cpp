@@ -3,27 +3,33 @@
 #include "Dog.h"
 #include "bird.h"
 
-void f()
+void show_animal(Animal* a)
 {
-	Animal a;   //a是对象    放在main的时候是堆上运行的
-	a.set_name("Tom");
-	a.set_age(8);
-	a.set_height(112.3);
+	a->show();
+}
+void show_animal(Animal& a)
+{
 	a.show();
-	Animal b;
-	b.set_name("Jack");
-	b.set_age(5);
-	b.set_height(72.1);
-	b.show();
 }
 
  
 int main() 
 {
-	 
-	Animal* d = new Dog("mark", 15 , 2.21 ,"wangwang" );  //这里的Animal和Dog的运行效果是不一样的
-	d->show();
-	delete d;
+
+	/*Dog* c = new Dog("bill", 10, 123.456," wangwang");
+	show_animal(c);
+	delete c;
+
+	Bird* f = new Bird("jack", 10, 12.3, " 长而宽");
+	show_animal(f);
+	delete f;*/
+
+	Dog d("abc", 5, 3.14, " wangwang");
+	show_animal(d);
+
+	//Animal* d = new Dog("mark", 15 , 2.21 ,"wangwang" );  //这里的Animal和Dog的运行效果是不一样的
+	//d->show();
+	//delete d;
 
 	/*Bird* c = new Bird("click", 15 , 2.21 ,"white" );
 	c->show();
@@ -32,6 +38,26 @@ int main()
 	cin.get();
 	cin.get();
 }
+
+
+
+
+
+
+//void f()
+//{
+//	Animal a;   //a是对象    放在main的时候是堆上运行的
+//	a.set_name("Tom");
+//	a.set_age(8);
+//	a.set_height(112.3);
+//	a.show();
+//	Animal b;
+//	b.set_name("Jack");
+//	b.set_age(5);
+//	b.set_height(72.1);
+//	b.show();
+//}
+
 /*int main()
 {
 	f();

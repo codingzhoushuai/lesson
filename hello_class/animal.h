@@ -20,5 +20,5 @@ public:
 	void set_height(double height);
 	double get_height();
 public:
-	void show();
+	virtual void show();    //Ðéº¯Êý
 }; 
