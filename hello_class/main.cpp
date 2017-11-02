@@ -24,8 +24,8 @@ int main()
 	show_animal(f);
 	delete f;*/
 
-	Dog d("abc", 5, 3.14, " wangwang");
-	show_animal(d);
+	Dog d("abc", 5, 3.14, " wangwang");          //全局函数，接受Animal指针函数；
+	show_animal(d);                              //从基类继承而来的派生类，实际上是在自身的构造函数中显示的调用基类的构造函数，然后复制基类的构造函数的内容，之后，可以在自己的类中添加一些其他的操作，而对于自己本身的函数成员，在本模块内有效，声明为静态函数，这样就可以避免命名的冲突问题。
 
 	//Animal* d = new Dog("mark", 15 , 2.21 ,"wangwang" );  //这里的Animal和Dog的运行效果是不一样的
 	//d->show();
