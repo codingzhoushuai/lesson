@@ -23,22 +23,22 @@ int main() {
 
 	/*Vehicle v;
 	v.run();*/
-
 	//Car c;
 	//c.run();
-
 	//Plane p;
 	//p.run();
 
-	Car *c1 = new Car();
-	Plane *p1 = new Plane();
+	Vehicle *c1 = new Car();
+	/*Plane *p1 = new Plane();
 	Car *c2 = new Car();
 	Plane *p2 = new Plane();
 	Car *c3 = new Car();
 	Plane *p3 = new Plane();
 	
 	Vehicle* va[] = { c1,p1,c2,p2,c3,p3 };
-	run_Vehicle(va,6);
+	run_Vehicle(va,6);*/
+
+	delete c1;
 
 	/*Vehicle *m = new Car();
 	m->run();
