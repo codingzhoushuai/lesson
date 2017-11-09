@@ -11,14 +11,13 @@ void run_Vehicle(Vehicle* v)
 	v->run();
 }
 
-void run_Vehicle(Vehicle* v[])
+void run_Vehicle(Vehicle* v[],int n)
 {
-	for (int i =0 ;i</*sizeof(v)/sizeof(Vehicle*)*/6;i++)
+	for (int i =0 ;i<n;i++)
 	{ 
 		v[i]->run(); 
 	}
 }
-
 
 int main() {
 
@@ -39,7 +38,7 @@ int main() {
 	Plane *p3 = new Plane();
 	
 	Vehicle* va[] = { c1,p1,c2,p2,c3,p3 };
-	run_Vehicle(va);
+	run_Vehicle(va,6);
 
 	/*Vehicle *m = new Car();
 	m->run();
