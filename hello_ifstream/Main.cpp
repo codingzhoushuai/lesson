@@ -31,7 +31,6 @@ int main()
 	cout << "max = " << max << endl << "order = " << order << endl;
 	infile.close();
 	
-
 	system("pause");
 
 	}
