@@ -23,11 +23,12 @@ namespace Information
 
 /*using namespace Computer;*/
 using Computer::i;
-using Computer::f;  //using指令申明可以用短名字     和第38行对应，依旧可以使用长名字
+using Computer::f;  //using指令申明可以用短名字     和第45行对应，依旧可以使用长名字
 
 //using namespace Information;   //两个using namespace Information;命名空间会冲突
 int main() 
 {
+	
 	auto i = 100;
 	auto d = 3.14;
 	auto s = "hello";
